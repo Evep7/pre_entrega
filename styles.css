@@ -1,0 +1,184 @@
+/* Fuente Google */
+body {
+    font-family: franklin gothic medium;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffecfa; 
+    color: #333333;
+}
+
+/* Header y navegación */
+header {
+    background-color: #ffecfa; 
+    color: #333333;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 .logo {
+    width: 600px; 
+    height: auto;
+    margin-right: 10px;
+}
+
+h2 {
+    font-family:'Bubblegum Sans', monospace, fanklin gothic medium; 
+    font-weight: 700; 
+    color: #ff69b4;
+}
+
+h3 {
+    font-family:franklin gothic medium;
+    font-size: 1,8em;
+    color: #ff69b4 ;
+}
+
+/* Fuente estilo "bubble" para la bienvenida */
+#inicio h2 {
+    font-family: fantasy;
+    font-size: 2em;
+    color: #ff69b4; 
+    text-align: center;
+}
+.south-park {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto;
+    object-fit: cover; 
+    border-radius: 10px; 
+    margin-top: 1em; 
+}
+
+#inicio p {
+    font-family: franklin gothic medium;
+    font-size: 1.2em;
+    color: #333333;
+    text-align: center;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    font-family: fantasy;
+    color: #333333;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ff69b4; /* Color rosa cuando se pasa el ratón por encima */
+}
+/* Secciones */
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+    padding: 1em;
+    background-color: #e3f2fd; /* Celeste pastel */
+    border-radius: 10px;
+}
+
+/* Sección de productos */
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));;
+    gap: 1em;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    border-radius: 8px; 
+    object-fit: cover;
+}
+
+.product-card .price {
+    font-size: 2em; 
+    color: #ff69b4; 
+    font-weight: bold;
+    font-family: fantasy; 
+    margin-top: 10px;
+}
+
+/* Sección de reseñas */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;  
+}
+
+.reviews-grid .review { 
+    background-color: #ffffff;
+    border: 1px solid #ffcccb;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 150px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-style:franklin gothic medium;
+}
+
+/* Formulario de contacto */
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ffcccb;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ffc1e3;
+    color: #333333;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ffb3d9;
+}
+
+/* Footer */
+footer {
+    background-color: #ffecfa;
+    color: #333333;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .product-cards, .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+}

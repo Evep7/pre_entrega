@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balhalla Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1> <img src="imagenes/logo.png" alt="Logo de Balhalla Store" class="logo"></h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <center> 
+            <h2>¡Bienvenidos a BALHALLA ST♡RE!</h2>
+            <p>✨Si estas buscando un lugar perfecto para hacer regalos <strong>originales</strong> y <strong>únicos</strong> hechos 100% a mano con amor, estas en el sitio indicado.🧶✨</p>
+            <img src="imagenes/perzonalizado.jpg" alt="South Park" class="south-park">
+        </center>
+            
+        </section>
+
+        <section id="productos">
+            <h2>PRODUCTOS</h2>
+                <!-- Tarjetas de productos -->
+            <div class="product-card">
+                <img src="imagenes/scaraGod.jpg" alt="Producto 1" class="product-image">
+                <h3>Scaramouche version Michi (Genshin Impact)</h3>
+                <p>Medida: 16cm de alto, sin contar la cola (21cm)</p>
+                <p>______Detalles______</p>
+                <p>Tejido con hilo de algóndon, relleno de vellón siliconado, detalles en fieltro.</p>
+                <span class="price"><strong>$20000</strong></span>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/hasbin hotel.jpg" alt="Producto 2" class="product-image">
+                <h3>Husk & Angel (Hazbin Hotel)</h3>
+                <p>Medida: 15cm de alto, sin contar la cola (Husk)/ 17cm de alto (Angel)</p>
+                <p>______Detalles______</p>
+                <p>Tejido con hilo de algóndon, relleno de vellón siliconado</p>
+                <span class="price"><strong>$16000</strong></span>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/capibaras.jpg" alt="Producto 2" class="product-image">
+                <h3> Capibaras versión Sanrio</h3>
+                <p>Medida: 5cm de alto</p>
+                <p>______Detalles______</p>
+                <p>Tejido con hilo de algóndon, relleno de vellón siliconado</p>
+                <span class="price"><strong>$3000</strong></span>
+            </div>
+            <div class="product-card">
+                <img src="imagenes/bts.jpg" alt="Producto 2" class="product-image">
+                <h3>BT21</h3>
+                <p>Medida: 7cm de alto</p>
+                <p>______Detalles______</p>
+                <p>Tejido con hilo de algóndon, relleno de vellón siliconado, ojos de seguridad con traba interna, doblemente reforzados.</p>
+                <span class="price"><strong>$3500</strong></span>
+            </div>
+        </section>
+
+        <section id="reseñas">
+            <h2>RESEÑAS</h2>
+            <div class="reviews-grid">
+                <!-- Reseñas de clientes -->
+                <p class="review">"Están hermosas las cosas, mis nenes están enloquecidos 🤭 Seguro te pido más cositas, muchas gracias!"🤗</p>
+                <p class="review">"Una locura las manualidades que hacen"🤭😍</p>
+                <p class="review">"Enamorada de mis muñecos"✨</p>
+                <p class="review">"Está hermoso 😍 siempre superando las expectativas de los productos que les encargas!"</p>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>CONTACTO</h2>
+            <form action="https://formspree.io/f/mbljybyn" method="POST">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="_replyto" required>
+
+                <label for="celular">Celular</label>
+                <input type="celular" id="celular" name="celular" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Balhalla Store - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
